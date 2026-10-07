@@ -27,8 +27,9 @@ export const CurrentWeather: React.FC<Props> = ({
       <Text style={styles.temp}>{temp}°</Text>
       <Text style={styles.condition}>{condition}</Text>
       <Text style={styles.subText}>
-        Cảm nhận: {feelsLike}° | C: {maxTemp}° - T: {minTemp}°
+        Cảm nhận: {feelsLike}°
       </Text>
+      <Text style = {styles.subText}>Nhiệt độ cao nhất: {maxTemp}° - Nhiệt độ thấp nhấp: {minTemp}°</Text>
     </View>
   );
 };
